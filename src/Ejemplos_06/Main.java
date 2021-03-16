@@ -33,6 +33,19 @@ public class Main {
 		
 		System.out.println("Promedio de edades: " + sumaEdades/personas.size());
 		
+		Scanner input = new Scanner(System.in);
+		float numeros[] = new float[5];
+
+		System.out.println("Guardando...");
+		for (int i = 0; i < 5; i++) {
+			System.out.println("Digite un numero: ");
+			numeros[i] = input.nextFloat();
+
+		}
+
+		for (float i : numeros) {
+			System.out.println("numeros guardados: " + i);
+		}
 	}
 
 }
